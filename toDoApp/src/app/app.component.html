@@ -1,0 +1,23 @@
+<div id="mainContainer">
+  <h4>{{ title }} </h4>
+    <form class="form-inline">
+        <div class="mx-sm-3" id="formInput">
+          <input type="text" class="form-control" [(ngModel)]="newTask.name" id="name" name="name" placeholder="New task" minlength="2" style="flex-grow: 3">
+          <div class="spacer"></div>
+          <button type="submit" class="btn btn-primary" style="flex-grow: 1" (click)="addNewItem()">Add</button>
+        </div>
+    </form>
+
+    <div class="col-md-4">
+    <ul class="list-group list-group-flush list">
+      <li class="list-group-item" *ngFor="let item of list" [ngClass]="{'strikeThrough': item.completed}">
+        <i class="far fa-square" *ngIf="!item.completed" (click)="changeItemStatus(item)"></i>
+        <i class="far fa-check-square" *ngIf="item.completed" (click)="changeItemStatus(item)"></i>
+        <span style="margin-left: 10px;">{{item.name}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,33 @@
+h4 {
+    padding: 40px 20px 15px 20px;
+}
+
+#mainContainer {
+    margin-left: 40px;
+}
+
+#formInput {
+    display: flex; 
+    justify-content: space-between; 
+    min-width: 33%;
+}
+
+.strikeThrough {
+    text-decoration: line-through;
+}
+
+.spacer {
+    width: 20px;
+}
+
+.mainContainer input {
+    margin-top: 20px;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.inputForm {
+    align-content: center;
+}
