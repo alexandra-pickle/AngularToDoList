@@ -1,33 +1,38 @@
 h4 {
-    padding: 40px 20px 15px 20px;
+    padding: 20px 20px 15px 20px;
 }
 
 #mainContainer {
-    margin-left: 40px;
-}
-
-#formInput {
-    display: flex; 
-    justify-content: space-between; 
-    min-width: 33%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
 }
 
 .strikeThrough {
     text-decoration: line-through;
 }
 
-.spacer {
-    width: 20px;
-}
-
 .mainContainer input {
     margin-top: 20px;
 }
 
-.list {
-    margin-top: 20px;
+.danger {
+    color: red;
 }
 
-.inputForm {
-    align-content: center;
+i {
+    cursor: pointer;
+    padding-right: 10px;
+    color: #ccc;
+}
+
+.listItem {
+    display:flex;
+    align-items: center;
+}
+
+.marginLeftAuto {
+    margin-left: auto;
 }

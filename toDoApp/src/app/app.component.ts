@@ -28,6 +28,12 @@ export class AppComponent implements OnInit {
     this.sortList();
   }
 
+  public delete(item: ListItem) {
+    let index = this.list.indexOf(item);
+    this.list.splice(index, 1);
+    this.sortList();
+  }
+
   private sortList() {
     this.list.sort(function(a: ListItem, b: ListItem) {
       if (a.completed === b.completed) {
